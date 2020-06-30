@@ -14,7 +14,7 @@ Sys.setenv(HTTPS_PROXY = "socks5://localhost:9050")
 
 library(jsonlite)
 
-setwd("D:/Dokumenti/Coursera/Dohodnina")
+setwd("D:/R/GitHub/Supervizor")
 
 davcne_rodov <- read.csv2("Davcne_stevilke.csv", header = T, stringsAsFactors=FALSE)
 
@@ -52,4 +52,4 @@ vse_transakcije$znesek <- as.numeric(vse_transakcije$znesek)
 vse_transakcije$mferac <- NULL
 
 
-#write.csv2(vse_transakcije, "./Supervizor_rodovi.csv", row.names = FALSE)
+write.csv2(vse_transakcije, "./Supervizor_rodovi.csv", row.names = FALSE)
